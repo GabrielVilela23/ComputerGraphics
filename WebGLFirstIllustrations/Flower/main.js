@@ -36,7 +36,7 @@ function main(){
   gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
   gl.vertexAttribPointer(colorLocation, 3, gl.FLOAT, false, 0, 0);
 
-  gl.clearColor(1.0, 1.0, 1.0, 1.0);
+  gl.clearColor(0.0, 0.8, 0.8, 1.0);
   gl.clear(gl.COLOR_BUFFER_BIT);
 
 //Petala 1
@@ -44,7 +44,71 @@ n=30;
   gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
   setCircleVertices(gl, 30, 0.23, 0.0, 0.45);
   gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
-  setCircleColor(gl, 30, [1.0, 1.0, 0.8]);  
+  setCircleColor(gl, 30, [1.0, 1.0, 1.0]);  
+  gl.drawArrays(gl.TRIANGLES, 0, 3*n);
+
+//Petala 2
+  n=30;
+  gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
+  setCircleVertices(gl, 30, 0.23, 0.3, 0.3);
+  gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+  setCircleColor(gl, 30, [1.0, 1.0, 1.0]);  
+  gl.drawArrays(gl.TRIANGLES, 0, 3*n);
+
+//Petala 3
+  n=30;
+  gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
+  setCircleVertices(gl, 30, 0.23, 0.45, 0.0);
+  gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+  setCircleColor(gl, 30, [1.0, 1.0, 1.0]);  
+  gl.drawArrays(gl.TRIANGLES, 0, 3*n);
+
+//Petala 4
+  n=30;
+  gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
+  setCircleVertices(gl, 30, 0.23, 0.3, -0.3);
+  gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+  setCircleColor(gl, 30, [1.0, 1.0, 1.0]);  
+  gl.drawArrays(gl.TRIANGLES, 0, 3*n);
+
+//Petala 5
+n=30;
+  gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
+  setCircleVertices(gl, 30, 0.23, 0.0, -0.45);
+  gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+  setCircleColor(gl, 30, [1.0, 1.0, 1.0]);  
+  gl.drawArrays(gl.TRIANGLES, 0, 3*n);
+
+//Petala 6
+n=30;
+  gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
+  setCircleVertices(gl, 30, 0.23, -0.3, -0.3);
+  gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+  setCircleColor(gl, 30, [1.0, 1.0, 1.0]);  
+  gl.drawArrays(gl.TRIANGLES, 0, 3*n);
+
+//Petala 7
+n=30;
+  gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
+  setCircleVertices(gl, 30, 0.23, -0.45, 0.0);
+  gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+  setCircleColor(gl, 30, [1.0, 1.0, 1.0]);  
+  gl.drawArrays(gl.TRIANGLES, 0, 3*n);
+
+//Petala 8
+n=30;
+  gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
+  setCircleVertices(gl, 30, 0.23, -0.3, 0.3);
+  gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+  setCircleColor(gl, 30, [1.0, 1.0, 1.0]);  
+  gl.drawArrays(gl.TRIANGLES, 0, 3*n);
+
+//Miolo
+n=30;
+  gl.bindBuffer(gl.ARRAY_BUFFER,positionBuffer);
+  setCircleVertices(gl, 30, 0.35, 0.0, 0.0);
+  gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+  setCircleColor(gl, 30, [0.99, 0.99, 0.59]);  
   gl.drawArrays(gl.TRIANGLES, 0, 3*n);
 }
 
